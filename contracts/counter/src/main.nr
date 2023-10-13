@@ -41,7 +41,7 @@ contract Counter {
     fn constructor( 
        
     )  {
-        let selector = compute_selector("_init(())");
+        let selector = compute_selector("_init()");
         context.call_public_function(context.this_address(), selector, []);
              
         
